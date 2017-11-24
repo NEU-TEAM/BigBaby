@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/voice_button"
+    android:contentDescription="@string/voice_icon_content_description"
+    android:scaleType="fitCenter"
+    android:contextClickable="true"
+    android:adjustViewBounds="true"
+    android:background="@drawable/horizon_original"
+    android:layout_width="70dp"
+    android:layout_height="70dp" >
+
+</ImageButton>

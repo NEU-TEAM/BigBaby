@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.pedestrian.bigbaby.Views.LaserScanView
+        android:id="@+id/laser_scan_renderer_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button_collection"
+        android:background="@color/background_white" />
+
+    <LinearLayout
+        android:id="@+id/button_collection"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:background="@color/background_white">
+
+        <Button
+            android:id="@+id/recenter_laser_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/center"
+            android:elevation="0dp"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/lock_camera_checkbox"
+            android:text="@string/map_lock_camera_string"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorLink="@android:color/holo_blue_dark"
+            android:textAlignment="center"
+            android:textCursorDrawable="@android:color/holo_blue_dark"
+            android:layout_weight="1"
+            android:gravity="center"
+            style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/clear_waypoints_button"
+            android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/map_clear_string"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>
